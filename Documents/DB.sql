@@ -8,7 +8,7 @@ USE Project_WebDocs_DB;
 create table Patient(
 Patient_Id int auto_increment primary key,
 Patient_Name varchar(500),
-Patient_Photo blob,
+Patient_Photo varchar(500),
 Patient_DOB	date,
 Patient_Gender varchar(500),
 Patient_Mobile_number varchar(500),	
@@ -27,13 +27,13 @@ create table Hospital(
 Hospital_id int auto_increment primary key,
 Hospital_Name varchar(500),
 Hospital_Address varchar(500),
-Hospital_Image blob
+Hospital_Image varchar(500)
 );
 
 create table Doctor(
 Doctor_Id	int auto_increment primary key,
 Doctor_Name	varchar(500),
-Doctor_Photo blob,	
+Doctor_Photo varchar(500),	
 Doctor_DOB	date,
 Doctor_Gender varchar(500),	
 Doctor_Mobile_number varchar(500),	
